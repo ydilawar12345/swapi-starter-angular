@@ -1,0 +1,52 @@
+
+<p>Select a climate </p>
+
+<select class="form-control" [(ngModel)]="selectedPlanetClimate" (ngModelChange)="planetFilterObject.climate = selectedPlanetClimate" >
+  <option *ngFor="let planet of planets">{{planet.climate}}</option>
+</select>
+
+<p>{{selectedPlanetClimate}} is a great choice!</p>
+
+
+<p>Select a terrain </p>
+
+<select class="form-control" [(ngModel)]="selectedPlanetTerrain" (ngModelChange)="planetFilterObject.terrain = selectedPlanetTerrain" >
+  <option *ngFor="let planet of planets">{{planet.terrain}}</option>
+</select>
+
+<p>{{selectedPlanetTerrain}}: sounds awesome! </p>
+
+
+
+<!--```Enter the climate you would love. : <input [(ngModel)]="userClimate">-->
+
+<!--<p>A planet that is {{userClimate}} sounds nice :)</p>```-->
+
+<!--<p>-->
+  <!--swapi-people component!-->
+<!--</p>-->
+<p> </p>
+<p>These are the planets in our universe. </p>
+<div class="row data" *ngFor="let planet of planets | planetPipe:planetFilterObject" (click)="selectedPlanet = planet">
+  <div class="col-xs-6">
+    {{ planet.name }}
+  </div>
+</div>
+
+
+
+
+
+
+<div class="row data">
+  <pre>{{selectedPerson | json}}</pre>
+</div>
+
+<!--<div class="row data" *ngFor="let climate of climates" (click)="selectedClimate = climate">-->
+  <!--<div class="col-xs-6">-->
+    <!--{{climate}}-->
+  <!--</div>-->
+<!--</div>-->
+<!--<div class="row data">-->
+  <!--<pre>{{selectedClimate | json}}</pre>-->
+<!--</div>-->
