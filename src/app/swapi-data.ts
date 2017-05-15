@@ -13,9 +13,11 @@ export class SwapiData {
 
   planetsObservable = this.swapiService.getAllPlanets(); // to subscribe to this, do this: .subscribe(data => this.planets = this.planets.concat(data));
 
-climates = ['tropical', 'artificial temperate', 'frigid', 'hot', 'humid', 'temperate', 'moist', 'hot', 'polluted', 'unknown'];
+  climates = ['perfect', 'tropical', 'arid', 'artificial temperate', 'frigid', 'hot', 'humid', 'temperate', 'moist', 'polluted', 'unknown'];
 
-  planets : any[] = [{
+  terrains = ['perfect', 'jungle', 'forests', 'grasslands', 'lakes', 'rivers', 'seas', 'unknown', 'airless asteroid', 'glaciers', 'mountains', 'ice canyons', 'fungus forests', 'fields', 'rock arches', 'caves', 'desert', 'mountains', 'volcanoes'];
+
+  planets: any[] = [{
     'name': 'Yusuf\'s planet',
     'rotation_period': '25',
     'orbital_period': '378',

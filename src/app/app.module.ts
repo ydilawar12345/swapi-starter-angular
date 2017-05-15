@@ -3,7 +3,7 @@ import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 import { AppComponent } from './app.component';
-import { SwapiPeopleComponent } from './swapi-people/swapi-people.component';
+import { SwapiPlanetsComponent } from './swapi-planets/swapi-planets.component';
 import { SwapiService } from './swapi.service';
 import { SwapiData } from './swapi-data';
 import {PlanetPipe} from './pipes/planet.pipe';
@@ -22,7 +22,7 @@ import 'rxjs/add/observable/empty';
 @NgModule({
   declarations: [
     AppComponent,
-    SwapiPeopleComponent,
+    SwapiPlanetsComponent,
     PlanetPipe
   ],
   imports: [
