@@ -3,7 +3,7 @@ import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 import { AppComponent } from './app.component';
-import { SwapiPlanetsComponent } from './swapi-planets/swapi-planets.component';
+import { SwapiPlanetsComponent } from './swapi-planets/swapi-planets';
 import { SwapiService } from './swapi.service';
 import { SwapiData } from './swapi-data';
 import {PlanetPipe} from './pipes/planet.pipe';

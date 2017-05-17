@@ -27,29 +27,25 @@
   <!--swapi-people component!-->
 <!--</p>-->
 <p> </p>
-<p>These are the planet(s) you should visit :) </p>
-
-<p>click on the suggested planet(s) to look at further information </p>
+<p>These are the planets you should visit :) </p>
 <div class="row data" *ngFor="let planet of planets | planetPipe:planetFilterObject" (click)="selectedPlanet = planet">
   <div class="col-xs-6">
     {{ planet.name }}
   </div>
 </div>
-<p>
 
-</p>
-<!--<p>These are all the planets in our universe. </p>-->
-<!--<div class="row data" *ngFor="let planet of planets" (click)="selectedPlanet = planet">-->
-  <!--<div class="col-xs-6">-->
-    <!--{{ planet.name }}-->
-  <!--</div>-->
-<!--</div>-->
+<p>These are all the planets in our universe. </p>
+<div class="row data" *ngFor="let planet of planets" (click)="selectedPlanet = planet">
+  <div class="col-xs-6">
+    {{ planet.name }}
+  </div>
+</div>
 
 
 
 
 <div class="row data">
-  <pre>{{selectedPlanet | json}}</pre>
+  <pre>{{selectedPerson | json}}</pre>
 </div>
 
 <!--<div class="row data" *ngFor="let climate of climates" (click)="selectedClimate = climate">-->
@@ -57,13 +53,6 @@
     <!--{{climate}}-->
   <!--</div>-->
 <!--</div>-->
-<div class="row data">
-  <pre>{{selectedClimate | json}}</pre>
-</div>
-
-<p>These are all the planets in our universe. </p>
-<div class="row data" *ngFor="let planet of planets" (click)="selectedPlanet = planet">
-<div class="col-xs-6">
-{{ planet.name }}
-</div>
-</div>
+<!--<div class="row data">-->
+  <!--<pre>{{selectedClimate | json}}</pre>-->
+<!--</div>-->

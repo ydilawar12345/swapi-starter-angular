@@ -1,8 +1,8 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { SwapiPlanetsComponent } from './swapi-planets.component';
+import { SwapiPlanetsComponent } from './swapi-planets';
 
-describe('SwapiPlanetsComponent', () => {
+describe('SwapiPlanets', () => {
   let component: SwapiPlanetsComponent;
   let fixture: ComponentFixture<SwapiPlanetsComponent>;
 

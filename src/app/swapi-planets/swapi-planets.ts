@@ -3,8 +3,8 @@ import {SwapiData} from '../swapi-data';
 import {PlanetFilterObject} from '../pipes/planetFilterObject';
 @Component({
   selector: 'app-swapi-planets',
-  templateUrl: './swapi-planets.component.html',
-  styleUrls: ['./swapi-planets.component.css']
+  templateUrl: './swapi-planets.html',
+  styleUrls: ['./swapi-planets.css']
 })
 
 export class SwapiPlanetsComponent implements OnInit {
